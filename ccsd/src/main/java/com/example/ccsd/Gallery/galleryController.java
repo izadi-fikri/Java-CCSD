@@ -30,7 +30,7 @@ public class galleryController {
     @Autowired
     private galleryService GalleryService;
 
-    @GetMapping
+   @GetMapping
     public List<gallery> getAllGallerys() {
         List<gallery> galleryList = GalleryService.getAllGallerys();
         

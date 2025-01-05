@@ -67,14 +67,14 @@ public class WebsiteImagesController {
         // Create a new Product instance
         WebsiteImages websiteImages = new WebsiteImages();
         websiteImages.setTitle(title);
-        websiteImages.setpostShortDescription(postShortDescription);
+        websiteImages.setPostShortDescription(postShortDescription);
         websiteImages.setDate(date);
         websiteImages.setTag(tag);
         websiteImages.setPlace(place);
         websiteImages.setStatus(status);
         websiteImages.setContent(content);
         websiteImages.setPostSlug(postSlug);
-        websiteImages.setimage(imageBytes);  // Store image as byte array
+        websiteImages.setImage(imageBytes);  // Store image as byte array
 
         // Save the product in MongoDB
         WebsiteImages savedwebsiteImages = websiteImagesService.addWebsiteImages(websiteImages);

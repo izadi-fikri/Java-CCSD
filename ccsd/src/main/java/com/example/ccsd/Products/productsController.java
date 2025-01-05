@@ -28,7 +28,7 @@ public class productsController {
     @Autowired
     private productsService productsService;
 
-    @GetMapping
+   /* @GetMapping
     public List<products> getAllProducts() {
         List<products> productsList = productsService.getAllProducts();  // Get all products
 
@@ -100,6 +100,6 @@ public class productsController {
     // public ResponseEntity<Void> deleteProducts(@PathVariable String id) {
     //     productsService.deleteProducts(id);
     //     return ResponseEntity.noContent().build();
-    // }
+    // }*/
 
 }

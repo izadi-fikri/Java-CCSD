@@ -49,7 +49,7 @@ public class usersController {
    
 
     
-    @GetMapping
+   @GetMapping
     public List<users> getAllUsers() {
     List<users> usersList = usersService.getAllUsers();  // Get all products
 
