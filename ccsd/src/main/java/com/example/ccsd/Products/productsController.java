@@ -24,11 +24,11 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 @RequestMapping("/api/products")
 public class productsController {
-    
+
     @Autowired
     private productsService productsService;
 
-    @GetMapping
+   @GetMapping
     public List<products> getAllProducts() {
         List<products> productsList = productsService.getAllProducts();  // Get all products
 
@@ -50,7 +50,7 @@ public class productsController {
                 .orElse(ResponseEntity.notFound().build());
         }
 
-    // add product based on the 
+    // add product based on the
     @PostMapping
     public ResponseEntity<Map<String, Object>> addProduct(
                 @RequestParam("title") String title,
@@ -83,7 +83,7 @@ public class productsController {
             Map<String, Object> response = new HashMap<>();
             response.put("success", true);
             response.put("product", savedProduct);
-            
+
             return ResponseEntity.ok(response);
     }
 
@@ -100,6 +100,6 @@ public class productsController {
     // public ResponseEntity<Void> deleteProducts(@PathVariable String id) {
     //     productsService.deleteProducts(id);
     //     return ResponseEntity.noContent().build();
-    // }*/
+    // }
 
 }

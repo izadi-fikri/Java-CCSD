@@ -19,11 +19,11 @@ export const About = () => {
         Authorization: `Bearer ${token}`,
       },
     })
-        .then((response) => response.json())
-        .then((data) => {
-          setPostShortDescription(data);
-        })
-        .catch((error) => console.error("Error fetching website texts:", error));
+      .then((response) => response.json())
+      .then((data) => {
+        setPostShortDescription(data);
+      })
+      .catch((error) => console.error("Error fetching website texts:", error));
   }, []);
 
   if (!WebsiteTexts || WebsiteTexts.length === 0) {
@@ -31,34 +31,38 @@ export const About = () => {
   }
 
   return (
-      <div id="about">
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12 col-md-6">
-              <img src="img/about.jpg" className="img-responsive" alt="" />
-            </div>
+    <div id="about">
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12 col-md-6">
+            <img src="img/about.jpg" className="img-responsive" alt="" />
+          </div>
 
-            <div className="col-xs-12 col-md-6">
-              <div className="about-text">
-                <h2>About Us</h2>
-                {/* Render data from API */}
-                {WebsiteTexts.map((websiteText, index) => (
-                    <div key={`${websiteText.name}-${index}`} className="col-md-12">
-                      <p>{websiteText.postShortDescription}</p>
+          <div className="col-xs-12 col-md-6">
+            <div className="about-text">
+              <h2>About Us</h2>
+              <h5>Crafted with luxurious silks, softest cottons,
+                and premium quality fabrics,
+                every piece is meticulously designed and
+                finished for an impeccable look and feel.</h5>
+              {/* Render data from API */}
+              {WebsiteTexts.map((websiteText, index) => (
+                <div key={`${websiteText.name}-${index}`} className="col-md-12">
+                  <p>{websiteText.postShortDescription}</p>
 
-                    </div>
-                ))}
-                <h3>Why Choose Us?</h3>
-                {WebsiteTexts.map((websiteText, index) => (
-                    <div key={`choose-${websiteText.name}-${index}`} className="col-md-12">
-                      <p>{websiteText.title}</p>
-                      <p>{websiteText.tag}</p>
-                    </div>
-                ))}
-              </div>
+                </div>
+              ))}
+              <h3>Why Choose Us?</h3>
+              {WebsiteTexts.map((websiteText, index) => (
+                <div key={`choose-${websiteText.name}-${index}`} className="col-md-12">
+                  <p>{websiteText.title}</p>
+                  <p>{websiteText.tag}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
+    </div>
   );
 };

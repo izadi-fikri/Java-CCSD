@@ -4,28 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9e3044a-f1eb-480c-b029-9e786ba2863d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Java-CCSD.iml" afterDir="false" />
+    <list default="true" id="d9e3044a-f1eb-480c-b029-9e786ba2863d" name="Changes" comment="uyuy">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/src/FrontEnd/scense/uwu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/src/assets/images/uwu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/src/assets/uwu2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/src/landingpage/uwu.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/javaccsd.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/javaccsd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java-CCSD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ccsd/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Gallery/gallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Gallery/gallery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Products/products.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Products/products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Products/productsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Products/productsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Products/productsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Products/productsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/users.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/usersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/usersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/usersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/usersService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTexts.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTexts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTextsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTextsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTextsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTextsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/src/Auth/AuthService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/Auth/AuthService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/src/FrontEnd/scense/SignInSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/FrontEnd/scense/SignInSide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/getItemAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/getItemAdmin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/saveItemAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/saveItemAdmin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/dashboard/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/global/SidebarAdmin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/global/SidebarAdmin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/global/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/global/Topbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/services/addProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/services/addProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/addTeam.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/addTeam.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/editTeam.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/editTeam.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/websites/websiteComponents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/websites/websiteComponents.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/yarn.lock" afterDir="false" />
     </list>
@@ -43,6 +55,17 @@
     &quot;assignee&quot;: &quot;izadi-fikri&quot;
   }
 }</component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDONmGCOM6G9fBt",
+        "number": 3
+      },
+      "lastSeen": 1736268601421
+    }
+  ]
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/izadi-fikri/Java-CCSD.git&quot;,
@@ -62,7 +85,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "#3 on Merging alyn",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/shits/IdeaProjects/Java-CCSD",
@@ -108,5 +131,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="uyuy" />
+    <option name="LAST_COMMIT_MESSAGE" value="uyuy" />
   </component>
 </project>

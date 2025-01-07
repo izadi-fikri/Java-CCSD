@@ -10,7 +10,7 @@ services:
     volumes:
       - ./ccsd/src:/app/src
     environment:
-     MONGO_URI: mongodb://root:amirul@mongo:27017/
+     MONGO_URI: mongodb://root:alyn00@mongo:27017/
     networks:
       - mognonetwork
     depends_on:
@@ -38,7 +38,7 @@ services:
       - ./db:/data/db
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: amirul
+      MONGO_INITDB_ROOT_PASSWORD: alyn00
     networks:
       - mognonetwork
 
@@ -49,8 +49,8 @@ services:
       - 8081:8081
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
-      ME_CONFIG_MONGODB_ADMINPASSWORD: amirul
-      ME_CONFIG_MONGODB_URL: mongodb://root:amirul@mongo:27017/
+      ME_CONFIG_MONGODB_ADMINPASSWORD: kiki
+      ME_CONFIG_MONGODB_URL: mongodb://root:alyn00@mongo:27017/
       ME_CONFIG_BASICAUTH: false
     networks:
       - mognonetwork
