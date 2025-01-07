@@ -14,7 +14,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AuthService from '../../Auth/AuthService';
-
+import uwuImage from './uwu.jpg';
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -71,7 +71,7 @@ export default function SignInSide() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage: 'url(https://source.unsplash.com/random?wallpapers)',
+            backgroundImage: 'url(https://www.whiteroomstudio.com.sg/wordpress/wp-content/uploads/2023/03/Multigeneration-Family-Portrait-Hari-Raya-Photoshoot-Singapore-2048x1366.jpeg)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
@@ -89,8 +89,13 @@ export default function SignInSide() {
               alignItems: 'center',
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-              <LockOutlinedIcon />
+            <Avatar sx={{m: 1, bgcolor: 'secondary.main', width: 200, height: 200}}>
+              {/*<LockOutlinedIcon />*/}
+              <img
+                  src={uwuImage}
+                  alt="Custom Icon"
+                  style={{width: '100%', height: '100%'}}
+              />
             </Avatar>
             <Typography component="h1" variant="h5">
               Sign in
@@ -134,12 +139,12 @@ export default function SignInSide() {
               <Grid container>
                 <Grid item xs>
                   <Link href="#" variant="body2">
-                    Forgot password?
+                    {/*Forgot password?*/}
                   </Link>
                 </Grid>
                 <Grid item>
                   <Link href="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
+                    {/*{"Don't have an account? Sign Up"}*/}
                   </Link>
                 </Grid>
               </Grid>

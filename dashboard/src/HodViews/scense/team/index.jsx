@@ -20,18 +20,18 @@ const TeamAdmin = () => {
     axios.defaults.withCredentials = true;
 
     useEffect(() => {
-      // Fetch all products from the API
-      fetch(`${API_BASE_URL}/api/users`, {
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
-        }
-      })
-      .then(response => response.json())
-      .then(data => {
-        setTeamDetails(data);
-      })
-      .catch(error => console.error('Error fetching products:', error));
+        // Fetch all products from the API
+        fetch(`${API_BASE_URL}/api/users`, {
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`,
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
+                setTeamDetails(data);
+            })
+            .catch(error => console.error('Error fetching products:', error));
     }, []);
 
 
@@ -42,16 +42,35 @@ const TeamAdmin = () => {
                 'Authorization': `Bearer ${token}`, // Include JWT token if needed for authorization
             },
         })
-        .then((response) => {
-            // Handle success response
-            console.log("User deleted:", response.data);
-            // Update the state to remove the deleted user from the teamDetails
-            setTeamDetails((prevDetails) => prevDetails.filter(user => user.userId !== userId));
+            .then((response) => {
+                // Handle success response
+                console.log("User deleted:", response.data);
+                // Update the state to remove the deleted user from the teamDetails
+                setTeamDetails((prevDetails) => prevDetails.filter(user => user.userId !== userId));
+            })
+            .catch((error) => {
+                // Handle error
+                console.error("Error deleting user:", error);
+            });
+    };
+
+    const handleEdit= (userId) => {
+        // Make the DELETE request to the backend API
+        axios.put(`${API_BASE_URL}/api/users/${userId}`, {
+            headers: {
+                'Authorization': `Bearer ${token}`, // Include JWT token if needed for authorization
+            },
         })
-        .catch((error) => {
-            // Handle error
-            console.error("Error deleting user:", error);
-        });
+            .then((response) => {
+                // Handle success response
+                console.log("User updated:", response.data);
+                // Update the state to remove the deleted user from the teamDetails
+                setTeamDetails((prevDetails) => prevDetails.filter(user => user.userId !== userId));
+            })
+            .catch((error) => {
+                // Handle error
+                console.error("Error updating user:", error);
+            });
     };
 
 
@@ -59,43 +78,36 @@ const TeamAdmin = () => {
     const colors = tokens(theme.palette.mode);
 
     const columns = [
-        { field: "userId", headerName: "ID" },
+        { field: "userId", headerName: "ID"  },
         { field: "name", headerName: "NAME", flex: 1, cellClassName: "name-column--cell" },
         { field: "phone", headerName: "PHONE#", flex: 1 },
         { field: "email", headerName: "EMAIL", flex: 1 },
-        { field: "role", headerName: "ROLE", flex: 1 },
+        { field: "role", headerName: "ROLE", flex: 1},
         {
-            // field: "delete",
-            // headerName: "DELETE",
             flex: 1,
-            renderCell: ({ row }) => {
+
+            renderCell: ({row}) => {
                 return (
-                    <Box
-                        width="40%"
-                        m="0 auto"
-                        p="5px"
-                        justifyContent="center"
-                        alignItems="center"
-                        // backgroundColor={row.access === "admin" ? colors.greenAccent[600] : colors.greenAccent[700]}
-                        // borderRadius="4px"
-                    >
-                            {/* delete func here onclick */}
-
-
-                        {/* <DeleteOutlinedIcon onClick={() => handleDelete(row.id)}/> 
-                        <Typography variant="body1" color={colors.grey[100]} sx={{ ml: "5px" }}>
+                    <Box display="flex" justifyContent="center" alignItems="center">
+                        <Button sx={{p:2,m:1}}
+                            variant="contained"
+                            color="error"
+                            startIcon={<DeleteOutlinedIcon/>}
+                            onClick={() => handleDelete(row.id)}
+                        >
                             Delete
-                        </Typography> */}
+                        </Button>
                     </Box>
                 );
             },
         },
+
     ];
 
     // Map the teamDetails to match the DataGrid row structure
     const rows = teamDetails.map((user) => {
         // Ensure `userId` is set as a unique id
-        const userId = user.userId || `user-${Math.random()}`; // Fallback if userId is undefined
+        const userId = user.id || `user-${Math.random()}`; // Fallback if userId is undefined
         const name = user.firstName && user.lastName ? `${user.firstName} ${user.lastName}` : "Unknown Name"; // Handle undefined names
 
         return {

@@ -51,132 +51,132 @@ const AddTeam = () => {
 
     const handleAddTeam = async (event) => {
         event.preventDefault(); // Prevent the default form submission behavior
-      //firstName, lastName, phone, userName, dob, address, role, email, password, image
-      // email, password, firstName, lastName, phone, address, role, userName, dob, image
+        //firstName, lastName, phone, userName, dob, address, role, email, password, image
+        // email, password, firstName, lastName, phone, address, role, userName, dob, image
         try {
-          const success = await SaveItemsAdmin.addTeamSave(email, password, firstName, lastName, phone, address, role, userName, dob, image);
-        
-          if (success) {
-            navigate("/dashboard-admin");
-          } else {
-            // Handle login failure and display an error message to the user
-            alert("Error Saving data");
-          }
+            const success = await SaveItemsAdmin.addTeamSave(email, password, firstName, lastName, phone, address, role, userName, dob, image);
+
+            if (success) {
+                navigate("/dashboard-admin");
+            } else {
+                // Handle login failure and display an error message to the user
+                alert("Error Saving data");
+            }
         } catch (error) {
-          // Handle network or other errors
-          console.error("Saving Error:", error);
-          alert("An error occurred while saving.");
+            // Handle network or other errors
+            console.error("Saving Error:", error);
+            alert("An error occurred while saving.");
         }
-      }
+    }
 
-  return (
-    <Box>
-    
-        <Header title="Add Team Member" subtitle="Enter New Member Details" />
+    return (
+        <Box>
 
-        <Box sx={{ display: 'flex', flexWrap: 'wrap' }} component="form" noValidate onSubmit={handleAddTeam}>
+            <Header title="Add Team Member" subtitle="Enter New Member Details" />
+
+            <Box sx={{ display: 'flex', flexWrap: 'wrap' }} component="form" noValidate onSubmit={handleAddTeam}>
                 <TextField
-                onChange={(e) => setFirstName(e.target.value)}
-                label="Enter Your First Name"
-                id="first_name"
-                sx={{ m: 1, width: '30%' }}
-                variant="filled"
+                    onChange={(e) => setFirstName(e.target.value)}
+                    label="Enter Your First Name"
+                    id="first_name"
+                    sx={{ m: 1, width: '30%' }}
+                    variant="filled"
                 />
                 <TextField
-                onChange={(e) => setuserName(e.target.value)}
-                label="Enter Desired User Name"
-                id="user_name"
-                sx={{ m: 1, width: '30%' }}
-                variant="filled"
+                    onChange={(e) => setuserName(e.target.value)}
+                    label="Enter Desired User Name"
+                    id="user_name"
+                    sx={{ m: 1, width: '30%' }}
+                    variant="filled"
                 />
                 <TextField
-                onChange={(e) => setRole(e.target.value)}
-                label="Enter Team Member Role"
-                id="role"
-                sx={{ m: 1, width: '30%' }}
-                variant="filled"
+                    onChange={(e) => setRole(e.target.value)}
+                    label="Enter Team Member Role"
+                    id="role"
+                    sx={{ m: 1, width: '30%' }}
+                    variant="filled"
                 />
                 <TextField
-                onChange={(e) => setLastname(e.target.value)}
-                label="Enter Your Last Name"
-                id="last_name"
-                sx={{ m: 1, width: '30%' }}
-                variant="filled"
+                    onChange={(e) => setLastname(e.target.value)}
+                    label="Enter Your Last Name"
+                    id="last_name"
+                    sx={{ m: 1, width: '30%' }}
+                    variant="filled"
                 />
                 <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
-                <InputLabel htmlFor="filled-adornment-password">Password</InputLabel>
-                <FilledInput
-                    onChange={(e) => setPassword(e.target.value)}
-                    id="password"
-                    type={showPassword ? 'text' : 'password'}
-                    endAdornment={
-                    <InputAdornment position="end">
-                        <IconButton
-                        aria-label="toggle password visibility"
-                        onClick={handleClickShowPassword}
-                        onMouseDown={handleMouseDownPassword}
-                        edge="end"
-                        >
-                        {showPassword ? <VisibilityOff /> : <Visibility />}
-                        </IconButton>
-                    </InputAdornment>
-                    }
-                />
+                    <InputLabel htmlFor="filled-adornment-password">Password</InputLabel>
+                    <FilledInput
+                        onChange={(e) => setPassword(e.target.value)}
+                        id="password"
+                        type={showPassword ? 'text' : 'password'}
+                        endAdornment={
+                            <InputAdornment position="end">
+                                <IconButton
+                                    aria-label="toggle password visibility"
+                                    onClick={handleClickShowPassword}
+                                    onMouseDown={handleMouseDownPassword}
+                                    edge="end"
+                                >
+                                    {showPassword ? <VisibilityOff /> : <Visibility />}
+                                </IconButton>
+                            </InputAdornment>
+                        }
+                    />
                 </FormControl>
                 <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
-                <InputLabel htmlFor="filled-adornment-email">Email</InputLabel>
-                <FilledInput
-                    onChange={(e) => setEmail(e.target.value)}
-                    id='email'
-                    type='email'
-                    endAdornment = {
-                        <InputAdornment position='end'>
-                            <IconButton
-                                aria-label="Envelope"
-                                edge="end"                                        
-                            >
-                            <EmailIcon></EmailIcon>
-                            </IconButton>
-                        </InputAdornment>
-                    }
-                    
-                >
+                    <InputLabel htmlFor="filled-adornment-email">Email</InputLabel>
+                    <FilledInput
+                        onChange={(e) => setEmail(e.target.value)}
+                        id='email'
+                        type='email'
+                        endAdornment = {
+                            <InputAdornment position='end'>
+                                <IconButton
+                                    aria-label="Envelope"
+                                    edge="end"
+                                >
+                                    <EmailIcon></EmailIcon>
+                                </IconButton>
+                            </InputAdornment>
+                        }
 
-                </FilledInput>
+                    >
 
-                </FormControl>
-                <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
-                <InputLabel htmlFor="filled-adornment-phone">Phone</InputLabel>
-                <FilledInput
-                   onChange={(e) => setPhone(e.target.value)}
-                    id='phone'
-                    type='text'
-                    endAdornment = {
-                        <InputAdornment position='end'>
-                            <IconButton
-                                aria-label="Phone"
-                                edge="end"                                        
-                            >
-                            <PhoneIcon></PhoneIcon>
-                            </IconButton>
-                        </InputAdornment>
-                    }
-                    
-                >
-
-                </FilledInput>
+                    </FilledInput>
 
                 </FormControl>
                 <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
-                <FilledInput
-                   onChange={(e) => setDob(e.target.value)}
-                    id='dob'
-                    type='date'
-                                        
-                >
+                    <InputLabel htmlFor="filled-adornment-phone">Phone</InputLabel>
+                    <FilledInput
+                        onChange={(e) => setPhone(e.target.value)}
+                        id='phone'
+                        type='text'
+                        endAdornment = {
+                            <InputAdornment position='end'>
+                                <IconButton
+                                    aria-label="Phone"
+                                    edge="end"
+                                >
+                                    <PhoneIcon></PhoneIcon>
+                                </IconButton>
+                            </InputAdornment>
+                        }
 
-                </FilledInput>
-                <FormHelperText id="filled-dob-helper-text">Date of Birth</FormHelperText>
+                    >
+
+                    </FilledInput>
+
+                </FormControl>
+                <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
+                    <FilledInput
+                        onChange={(e) => setDob(e.target.value)}
+                        id='dob'
+                        type='date'
+
+                    >
+
+                    </FilledInput>
+                    <FormHelperText id="filled-dob-helper-text">Date of Birth</FormHelperText>
                 </FormControl>
                 <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
                     <InputLabel htmlFor="image-upload">Upload Image</InputLabel>
@@ -201,38 +201,38 @@ const AddTeam = () => {
                     <FormHelperText id="image-upload-helper-text">Select an image file</FormHelperText>
                 </FormControl>
                 <FormControl sx={{ m: 1, width: '93%' }} variant="filled">
-                <InputLabel htmlFor="filled-adornment-address">Address</InputLabel>
-                <FilledInput
-                   onChange={(e) => setAddress(e.target.value)}
-                    id='address'
-                    type='text'
-                    endAdornment = {
-                        <InputAdornment position='end'>
-                            <IconButton
-                                aria-label="address"
-                                edge="end"                                        
-                            >
-                            <LocationOnIcon></LocationOnIcon>
-                            </IconButton>
-                        </InputAdornment>
-                    }
-                    
-                >
+                    <InputLabel htmlFor="filled-adornment-address">Address</InputLabel>
+                    <FilledInput
+                        onChange={(e) => setAddress(e.target.value)}
+                        id='address'
+                        type='text'
+                        endAdornment = {
+                            <InputAdornment position='end'>
+                                <IconButton
+                                    aria-label="address"
+                                    edge="end"
+                                >
+                                    <LocationOnIcon></LocationOnIcon>
+                                </IconButton>
+                            </InputAdornment>
+                        }
 
-                </FilledInput>
-                <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-                
-              >
-                Save
-              </Button>
+                    >
+
+                    </FilledInput>
+                    <Button
+                        type="submit"
+                        fullWidth
+                        variant="contained"
+                        sx={{ mt: 3, mb: 2 }}
+
+                    >
+                        Save
+                    </Button>
                 </FormControl>
-        </Box> 
-    </Box>
-  );
+            </Box>
+        </Box>
+    );
 };
 
 export default AddTeam;

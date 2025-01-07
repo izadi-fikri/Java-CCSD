@@ -1,4 +1,3 @@
-//usersService.java
 package com.example.ccsd.Users;
 
 import com.mongodb.client.MongoIterable;
@@ -15,14 +14,17 @@ public class usersService {
     private usersRepository usersRepository;
 
     public Optional<users> getUserById(String userId) {
+
         return usersRepository.findById(userId);
     }
 
     public users addUser(users user) {
+
         return usersRepository.save(user);
     }
 
     public List<users> getAllUsers() {
+
         return usersRepository.findAll();
     }
 
@@ -43,6 +45,7 @@ public class usersService {
     }
 
     public users getUserByEmail(Object email) {
+
         return usersRepository.findByEmail(email.toString());
     }
 
