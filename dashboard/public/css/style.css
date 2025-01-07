@@ -104,7 +104,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #9f2519ff 0%, #d9534f 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -134,11 +134,11 @@ hr {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #fff;
-  border-color: #608dfd;
+  background-color: #f8fff4ff;
+  border-color: #9f2519ff;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #608dfd;
+  background-color: #9f2519ff;
 }
 .section-title {
   margin-bottom: 70px;
@@ -152,7 +152,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, #f8fff4ff 0%, #9f2519ff 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -166,8 +166,8 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #000000 0%, #6372ff 100%);
+  background-color: #9f2519ff;
+  background-image: linear-gradient(to right, #000000 0%, #9f2519ff 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -184,7 +184,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #6372ff;
+  background-color: #d39d55ff;
 }
 .btn:active,
 .btn.active {
@@ -229,7 +229,7 @@ a:focus,
 }
 .intro h1 span {
   font-weight: 800;
-  color: #5ca9fb;
+  color: #f8fff4ff;
 }
 .intro p {
   color: #fff;
@@ -257,7 +257,7 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #f8fff4ff 0%, #9f2519ff 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -276,7 +276,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, #d9534f 0%, #9f2519ff 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -291,7 +291,7 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #5ca9fb;
+  color: #d9534f ;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
@@ -310,7 +310,7 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #000000 100%);
+  background: linear-gradient(to right, #d9534f 0%, #0c1713ff 100%);
   color: #fff;
 }
 #services .service-desc {
@@ -334,7 +334,7 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #9f2519ff 0%, #d9534f 100%);
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -370,8 +370,8 @@ header .intro-text {
   color: #fff;
   background: linear-gradient(
     to right,
-    rgba(99, 114, 255, 0.8) 0%,
-    rgba(92, 169, 251, 0.8) 100%
+    rgba(159, 37, 25, 0.8) 0%,
+    rgba(159, 37, 25, 1) 100%
   );
   padding: 30% 0 0;
   height: 100%;
@@ -403,7 +403,7 @@ header .intro-text {
 /* Testimonials Section */
 #testimonials {
   padding: 120px 0;
-  background: linear-gradient(to right, #000000 0%, #6372ff 100%);
+  background: linear-gradient(to right, #000000 0%, #9f2519ff 100%);
   color: #fff;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -450,7 +450,7 @@ header .intro-text {
   margin: 0 auto 15px;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid #5ca9fb;
+  border: 3px solid #d9534f;
 }
 
 .testimonial-image img {
@@ -468,7 +468,7 @@ header .intro-text {
 .testimonial-meta {
   font-size: 18px;
   font-weight: bold;
-  color: #ffdd57;
+  color: #d39d55ff;
   margin-top: 10px;
 }
 
@@ -491,7 +491,7 @@ header .intro-text {
 
 .testimonial-controls button:hover {
   background: #ffdd57;
-  color: #1e3c72;
+  color: #9f2519ff;
   transform: scale(1.1);
 }
 
@@ -520,7 +520,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #000000 100%);
+  background: linear-gradient(to right, #d9534f 0%, #000000 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -564,7 +564,7 @@ header .intro-text {
   border: 2px solid #fff;
 }
 #contact .btn-custom:hover {
-  color: #1f386e;
+  color: #9f2519ff;
   background: #fff;
 }
 label {
@@ -640,7 +640,7 @@ label {
   transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-  color: #608dfd;
+  color: #d9534f;
   background: #fff;
 }
 /* Footer Section*/
@@ -653,10 +653,10 @@ label {
   font-size: 14px;
 }
 #footer a {
-  color: #608dfd;
+  color: #d43f3a;
 }
 #footer a:hover {
-  border-bottom: 2px solid #608dfd;
+  border-bottom: 2px solid #d9534f;
 }
 
 @media (max-width: 768px) {

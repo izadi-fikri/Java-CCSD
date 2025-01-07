@@ -8,6 +8,7 @@ public class WebsiteTexts {
     private String content;
     private String title;
 
+    // Getter for the ID
     public String getId() {
         return id;
     }
@@ -17,22 +18,35 @@ public class WebsiteTexts {
         this.id = id;
     }
 
+    // Getter for the texts
     public String getText() {
         return texts;
     }
-    public void setText(Object text) {
-        this.texts = (String) text; }
 
+    // Setter for the texts
+    public void setText(Object text) {
+        this.texts = (String) text;
+    }
+
+    // Getter for the title
     public String getTitle() {
         return title;
     }
-    public void setContent(String content)
-    {
-        this.content = content;
 
+    // Setter for the title
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    // Getter for the content
+    public String getContent() {
+        return content;
+    }
+
+    // Setter for the content
+    public void setContent(String content) {
+        this.content = content;
     }
 }
-
-
 
 
