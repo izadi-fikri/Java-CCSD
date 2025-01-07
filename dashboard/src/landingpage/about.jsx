@@ -41,6 +41,10 @@ export const About = () => {
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
               <h2>About Us</h2>
+              <h5>Crafted with luxurious silks, softest cottons,
+                and premium quality fabrics,
+                every piece is meticulously designed and
+                finished for an impeccable look and feel.</h5>
               {/* Render data from API */}
               {WebsiteTexts.map((websiteText, index) => (
                 <div key={`${websiteText.name}-${index}`} className="col-md-12">

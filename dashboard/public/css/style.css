@@ -43,13 +43,13 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #608dfd;
+  color: #9f2519ff;
   font-weight: 400;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #608dfd;
+  color: #9f2519ff;
 }
 ul,
 ol {
@@ -125,7 +125,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  background: linear-gradient(to right, #9f2519ff 0%, #d9534f 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -223,7 +223,7 @@ a:focus,
   color: #ffffff;
   font-size: 82px;
   font-weight: 700;
-  text-transform: uppercase;
+  #text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -293,7 +293,7 @@ header .intro-text {
   font-family: "FontAwesome";
   color: #d9534f ;
   font-size: 11px;
-  font-weight: 300;
+  font-weight: 100;
   padding-right: 8px;
 }
 #about img {
@@ -355,7 +355,7 @@ header .intro-text {
   padding: 100px 0;
 }
 .portfolio-item {
-  margin: 1px -15px 0 -14px;
+  margin: 1px -80px 0 -14px;
   padding: 0;
 }
 .portfolio-item .hover-bg {
