@@ -136,6 +136,13 @@ const SidebarAdmin = () => {
               selected={selected}
               setSelected={setSelected}
             />
+              <Item
+                  title="Image List"
+                  to="/website-imageList-admin"
+                  icon={<ScreenSearchDesktopIcon />}
+                  selected={selected}
+                  setSelected={setSelected}
+              />
             <Typography
               variant="h6"
               color={colors.grey[300]}
