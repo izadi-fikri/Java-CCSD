@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
-import profileAvatar from '../../../assets/profile-avatar.png';
+import profileAvatar from '../../../assets/uwu2.jpg';
 import { tokens } from "../../../base/theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";

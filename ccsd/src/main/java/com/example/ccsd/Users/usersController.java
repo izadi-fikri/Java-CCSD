@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 
+
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/users")
@@ -32,6 +33,31 @@ public class usersController {
 
     @Autowired
     private usersService usersService;
+
+
+    @GetMapping("/testConnection")
+    public ResponseEntity<String> testConnection() {
+        try {
+            users testUser = new users();
+            testUser.setEmail("test@example.com");
+            usersService.addUser(testUser); // Use the service to save the user
+            return ResponseEntity.ok("Connection successful! Test user added.");
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("Connection failed: " + e.getMessage());
+        }
+    }
+
+//    @GetMapping("/testConnection")
+//    public ResponseEntity<String> testConnection() {
+//        try {
+//            users testUser = new users();
+//            testUser.setEmail("test@example.com");
+//            usersRepository.save(testUser);
+//            return ResponseEntity.ok("Connection successful! Test user added.");
+//        } catch (Exception e) {
+//            return ResponseEntity.status(500).body("Connection failed: " + e.getMessage());
+//        }
+//    }
 
     // @GetMapping
     // public List<users> getAllUsers() {
@@ -49,7 +75,7 @@ public class usersController {
    
 
     
-   @GetMapping
+    @GetMapping
     public List<users> getAllUsers() {
     List<users> usersList = usersService.getAllUsers();  // Get all products
 
@@ -180,8 +206,8 @@ public class usersController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteUser(@PathVariable String userId) {
-        usersService.deleteUser(userId);
+    public ResponseEntity<Void> deleteUser(@PathVariable String id) {
+        usersService.deleteUser(id);
         return ResponseEntity.noContent().build();
     }
 

@@ -15,7 +15,7 @@ const Topbar = () => {
   const { toggleColorMode } = useContext(ColorModeContext);
 
   return (
-    <Box display="flex" justifyContent="space-between" p={2}>
+    <Box display="auto" justifyContent="space-between" p={2}>
       {/* Search Bar */}
       <Box
         display="flex"
@@ -37,15 +37,15 @@ const Topbar = () => {
             <DarkModeOutlinedIcon />
           )}
         </IconButton>
-        <IconButton>
-          <NotificationsOutlinedIcon />
-        </IconButton>
-        <IconButton>
-          <SettingsOutlinedIcon />
-        </IconButton>
-        <IconButton>
-          <PersonOutlinedIcon />
-        </IconButton>
+        {/*<IconButton>*/}
+        {/*  <NotificationsOutlinedIcon />*/}
+        {/*</IconButton>*/}
+        {/*<IconButton>*/}
+        {/*  <SettingsOutlinedIcon />*/}
+        {/*</IconButton>*/}
+        {/*<IconButton>*/}
+        {/*  <PersonOutlinedIcon />*/}
+        {/*</IconButton>*/}
       </Box>
     </Box>
   );
