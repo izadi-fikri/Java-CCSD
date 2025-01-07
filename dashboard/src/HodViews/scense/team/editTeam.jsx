@@ -38,36 +38,36 @@ const EditTeam = () => {
     const [email, setEmail] = useState("");
 
     useEffect(() => {
-      GetItemsAdmin.getTeamDataAdminEdit(userId)
-        .then((result) => {
-          const teamData = result || {};
-          setFirstName(teamData.firstName);
-          setEmail(teamData.email);
-          setLastname(teamData.lastName);
-          setEmail(teamData.email);
-          setUsername(teamData.username);
-          setDob(teamData.dob);
-          setRole(teamData.role);
-          setPhone(teamData.phoneNumber);
-          setProfPic(teamData.profPic);
-          setAddress(teamData.address)
+        GetItemsAdmin.getTeamDataAdminEdit(userId)
+            .then((result) => {
+                const teamData = result || {};
+                setFirstName(teamData.firstName);
+                setEmail(teamData.email);
+                setLastname(teamData.lastName);
+                setEmail(teamData.email);
+                setUsername(teamData.username);
+                setDob(teamData.dob);
+                setRole(teamData.role);
+                setPhone(teamData.phoneNumber);
+                setProfPic(teamData.profPic);
+                setAddress(teamData.address)
 
-          setLoading(false); // Set loading to false when data is loaded
-        })
-        .catch((error) => {
-          console.error("Error fetching team data:", error);
-        });
+                setLoading(false); // Set loading to false when data is loaded
+            })
+            .catch((error) => {
+                console.error("Error fetching team data:", error);
+            });
     }, [userId]);
-  
+
 
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
-    
-    
-    const [showPassword, setShowPassword] = React.useState(false);
-    
 
-    
+
+    const [showPassword, setShowPassword] = React.useState(false);
+
+
+
     const navigate = useNavigate();
     const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -82,29 +82,29 @@ const EditTeam = () => {
 
     const handleEditTeam = async (event) => {
         event.preventDefault(); // Prevent the default form submission behavior
-      
+
         try {
-          const success = await EditItemsAdmin.editTeamSave(userId, firstName, lastName, phoneNumber, username, dob, address, role, email, password, image-upload);
-          
-          if (success) {
-            navigate("/api/users");
-          } else {
-            // Handle login failure and display an error message to the user
-            alert("Error Saving data");
-          }
+            const success = await EditItemsAdmin.editTeamSave(userId, firstName, lastName, phoneNumber, username, dob, address, role, email, password, image-upload);
+
+            if (success) {
+                navigate("/api/users");
+            } else {
+                // Handle login failure and display an error message to the user
+                alert("Error Saving data");
+            }
         } catch (error) {
-          // Handle network or other errors
-          console.error("Saving Error:", error);
-          alert("An error occurred while saving.");
+            // Handle network or other errors
+            console.error("Saving Error:", error);
+            alert("An error occurred while saving.");
         }
-      }
+    }
 
-  return (
-    <Box>
-    
-        <Header title="Add Team Member" subtitle="Enter New Member Details" />
+    return (
+        <Box>
 
-        <Box sx={{ display: 'flex', flexWrap: 'wrap' }} component="form" noValidate onSubmit={handleEditTeam}>
+            <Header title="Add Team Member" subtitle="Enter New Member Details" />
+
+            <Box sx={{ display: 'flex', flexWrap: 'wrap' }} component="form" noValidate onSubmit={handleEditTeam}>
                 <TextField
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
@@ -138,82 +138,82 @@ const EditTeam = () => {
                     variant="filled"
                 />
                 <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
-                <InputLabel htmlFor="filled-adornment-password">Password</InputLabel>
-                <FilledInput
-                    onChange={(e) => setPassword(e.target.value)}
-                    id="password"
-                    type={showPassword ? 'text' : 'password'}
-                    endAdornment={
-                    <InputAdornment position="end">
-                        <IconButton
-                        aria-label="toggle password visibility"
-                        onClick={handleClickShowPassword}
-                        onMouseDown={handleMouseDownPassword}
-                        edge="end"
-                        >
-                        {showPassword ? <VisibilityOff /> : <Visibility />}
-                        </IconButton>
-                    </InputAdornment>
-                    }
-                />
+                    <InputLabel htmlFor="filled-adornment-password">Password</InputLabel>
+                    <FilledInput
+                        onChange={(e) => setPassword(e.target.value)}
+                        id="password"
+                        type={showPassword ? 'text' : 'password'}
+                        endAdornment={
+                            <InputAdornment position="end">
+                                <IconButton
+                                    aria-label="toggle password visibility"
+                                    onClick={handleClickShowPassword}
+                                    onMouseDown={handleMouseDownPassword}
+                                    edge="end"
+                                >
+                                    {showPassword ? <VisibilityOff /> : <Visibility />}
+                                </IconButton>
+                            </InputAdornment>
+                        }
+                    />
                 </FormControl>
                 <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
-                <InputLabel htmlFor="filled-adornment-email">Email</InputLabel>
-                <FilledInput
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
-                    id='email'
-                    type='email'
-                    endAdornment = {
-                        <InputAdornment position='end'>
-                            <IconButton
-                                aria-label="Envelope"
-                                edge="end"                                        
-                            >
-                            <EmailIcon></EmailIcon>
-                            </IconButton>
-                        </InputAdornment>
-                    }
-                    
-                >
+                    <InputLabel htmlFor="filled-adornment-email">Email</InputLabel>
+                    <FilledInput
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                        id='email'
+                        type='email'
+                        endAdornment = {
+                            <InputAdornment position='end'>
+                                <IconButton
+                                    aria-label="Envelope"
+                                    edge="end"
+                                >
+                                    <EmailIcon></EmailIcon>
+                                </IconButton>
+                            </InputAdornment>
+                        }
 
-                </FilledInput>
+                    >
 
-                </FormControl>
-                <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
-                <InputLabel htmlFor="filled-adornment-phone">Phone</InputLabel>
-                <FilledInput
-                   onChange={(e) => setPhoneNumber(e.target.value)}
-                   value={phone}
-                    id='phoneNumber'
-                    type='text'
-                    endAdornment = {
-                        <InputAdornment position='end'>
-                            <IconButton
-                                aria-label="Phone"
-                                edge="end"                                        
-                            >
-                            <PhoneIcon></PhoneIcon>
-                            </IconButton>
-                        </InputAdornment>
-                    }
-                    
-                >
-
-                </FilledInput>
+                    </FilledInput>
 
                 </FormControl>
                 <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
-                <FilledInput
-                   onChange={(e) => setDob(e.target.value)}
-                   value={dob}
-                    id='dob'
-                    type='date'
-                                        
-                >
+                    <InputLabel htmlFor="filled-adornment-phone">Phone</InputLabel>
+                    <FilledInput
+                        onChange={(e) => setPhoneNumber(e.target.value)}
+                        value={phone}
+                        id='phoneNumber'
+                        type='text'
+                        endAdornment = {
+                            <InputAdornment position='end'>
+                                <IconButton
+                                    aria-label="Phone"
+                                    edge="end"
+                                >
+                                    <PhoneIcon></PhoneIcon>
+                                </IconButton>
+                            </InputAdornment>
+                        }
 
-                </FilledInput>
-                <FormHelperText id="filled-dob-helper-text">Date of Birth</FormHelperText>
+                    >
+
+                    </FilledInput>
+
+                </FormControl>
+                <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
+                    <FilledInput
+                        onChange={(e) => setDob(e.target.value)}
+                        value={dob}
+                        id='dob'
+                        type='date'
+
+                    >
+
+                    </FilledInput>
+                    <FormHelperText id="filled-dob-helper-text">Date of Birth</FormHelperText>
                 </FormControl>
                 <FormControl sx={{ m: 1, width: '30%' }} variant="filled">
                     <InputLabel htmlFor="image-upload">Upload Image</InputLabel>
@@ -238,39 +238,39 @@ const EditTeam = () => {
                     <FormHelperText id="image-upload-helper-text">Select an image file</FormHelperText>
                 </FormControl>
                 <FormControl sx={{ m: 1, width: '93%' }} variant="filled">
-                <InputLabel htmlFor="filled-adornment-address">Address</InputLabel>
-                <FilledInput
-                   onChange={(e) => setAddress(e.target.value)}
-                    value={address}
-                    id='address'
-                    type='text'
-                    endAdornment = {
-                        <InputAdornment position='end'>
-                            <IconButton
-                                aria-label="address"
-                                edge="end"                                        
-                            >
-                            <LocationOnIcon></LocationOnIcon>
-                            </IconButton>
-                        </InputAdornment>
-                    }
-                    
-                >
+                    <InputLabel htmlFor="filled-adornment-address">Address</InputLabel>
+                    <FilledInput
+                        onChange={(e) => setAddress(e.target.value)}
+                        value={address}
+                        id='address'
+                        type='text'
+                        endAdornment = {
+                            <InputAdornment position='end'>
+                                <IconButton
+                                    aria-label="address"
+                                    edge="end"
+                                >
+                                    <LocationOnIcon></LocationOnIcon>
+                                </IconButton>
+                            </InputAdornment>
+                        }
 
-                </FilledInput>
-                <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-                
-              >
-                Save
-              </Button>
+                    >
+
+                    </FilledInput>
+                    <Button
+                        type="submit"
+                        fullWidth
+                        variant="contained"
+                        sx={{ mt: 3, mb: 2 }}
+
+                    >
+                        Save
+                    </Button>
                 </FormControl>
-        </Box> 
-    </Box>
-  );
+            </Box>
+        </Box>
+    );
 };
 
 export default EditTeam;

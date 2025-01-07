@@ -4,11 +4,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "websitetexts")
 public class WebsiteTexts {
     private String id;
-    private String texts;
-    private String content;
+    private String postShortDescription;
+    private String status;
+    private String tag;
     private String title;
 
-    // Getter for the ID
     public String getId() {
         return id;
     }
@@ -17,36 +17,42 @@ public class WebsiteTexts {
     public void setId(String id) {
         this.id = id;
     }
-
-    // Getter for the texts
-    public String getText() {
-        return texts;
+    
+    public String getPostShortDescription() {
+        return postShortDescription;
     }
-
-    // Setter for the texts
-    public void setText(Object text) {
-        this.texts = (String) text;
+    
+    public void setPostShortDescription(String postShortDescription) {
+        this.postShortDescription = postShortDescription;
     }
-
-    // Getter for the title
+    
+    public String getStatus() {
+        return status;
+    }
+    
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    
+    public String getTag() {
+        return tag;
+    }
+    
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+    
     public String getTitle() {
         return title;
     }
-
-    // Setter for the title
+    
     public void setTitle(String title) {
         this.title = title;
     }
 
-    // Getter for the content
-    public String getContent() {
-        return content;
-    }
 
-    // Setter for the content
-    public void setContent(String content) {
-        this.content = content;
-    }
 }
+
+
 
 
