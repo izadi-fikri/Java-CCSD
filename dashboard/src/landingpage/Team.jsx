@@ -17,7 +17,7 @@ export const Team = () => {
 
 useEffect(() => {
   // Fetch all products from the API
-  fetch( `${API_BASE_URL}/api/users`,
+  fetch( `${API_BASE_URL}/api/user`,
 
     {
       // request headers

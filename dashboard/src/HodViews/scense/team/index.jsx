@@ -21,7 +21,7 @@ const TeamAdmin = () => {
 
     useEffect(() => {
         // Fetch all products from the API
-        fetch(`${API_BASE_URL}/api/users`, {
+        fetch(`${API_BASE_URL}/api/user`, {
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`,
@@ -37,7 +37,7 @@ const TeamAdmin = () => {
 
     const handleDelete = (userId) => {
         // Make the DELETE request to the backend API
-        axios.delete(`${API_BASE_URL}/api/users/${userId}`, {
+        axios.delete(`${API_BASE_URL}/api/user/${userId}`, {
             headers: {
                 'Authorization': `Bearer ${token}`, // Include JWT token if needed for authorization
             },
@@ -56,7 +56,7 @@ const TeamAdmin = () => {
 
     const handleEdit= (userId) => {
         // Make the DELETE request to the backend API
-        axios.put(`${API_BASE_URL}/api/users/${userId}`, {
+        axios.put(`${API_BASE_URL}/api/user/${userId}`, {
             headers: {
                 'Authorization': `Bearer ${token}`, // Include JWT token if needed for authorization
             },

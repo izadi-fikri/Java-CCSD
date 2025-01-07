@@ -87,7 +87,7 @@ const EditTeam = () => {
             const success = await EditItemsAdmin.editTeamSave(userId, firstName, lastName, phoneNumber, username, dob, address, role, email, password, image-upload);
 
             if (success) {
-                navigate("/api/users");
+                navigate("/api/user");
             } else {
                 // Handle login failure and display an error message to the user
                 alert("Error Saving data");

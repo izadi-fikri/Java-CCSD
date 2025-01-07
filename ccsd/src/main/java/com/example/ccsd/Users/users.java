@@ -3,7 +3,7 @@ package com.example.ccsd.Users;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "users")
+@Document(collection = "user")
 public class users {
 
     @Id
