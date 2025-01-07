@@ -35,30 +35,35 @@ public class gallery {
     public void setTitle(String title) {
         this.title = title;
     }
+
     public String getPostSlug() {
         return postSlug;
     }
     public void setPostSlug(String postSlug) {
         this.postSlug = postSlug;
     }
+
     public String getpostShortDescription() {
         return postShortDescription;
     }
     public void setpostShortDescription(String postShortDescription) {
         this.postShortDescription = postShortDescription;
     }
+
     public String getTag() {
         return tag;
     }
     public void setTag(String tag) {
         this.tag = tag;
     }
+
     public String getPlace() {
         return place;
     }
     public void setPlace(String place) {
         this.place = place;
     }
+
     public String getDate() {
         return date;
     }
@@ -72,12 +77,14 @@ public class gallery {
     public void setStatus(String status) {
         this.status = status;
     }
+
     public String getContent() {
         return content;
     }
     public void setContent(String content) {
         this.content = content;
     }
+
     public byte[] getimage() {
         return image;
     }

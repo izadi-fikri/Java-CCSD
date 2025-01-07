@@ -14,7 +14,7 @@ const WebsiteComponentsAdmin = () =>{
 
         <Box m="20px">
             <Box display="flex" justifyContent="space-between" alignItems="center">
-                <Header title="WEIBSITE COMPONENTS" subtitle = "Chose the Part You Want to Change" />
+                <Header title="Webpage COMPONENTS" subtitle = "Chose the Part You Want to Change" />
             </Box>
             <Box
                 display="grid"
@@ -25,22 +25,22 @@ const WebsiteComponentsAdmin = () =>{
             <Box gridColumn="span 4" backgroundColor = {colors.primary[400]} display="flex" alignItems="center" justifyContent="center">
                 <Link href="/website-image-admin"><ThreeGridBoxImage 
                     image={require("../../../assets/images/website_image.jpg")}
-                    title="Website Images"
-                    subtitle="you Can change Website Images"
+                    title="Styles"
+                    subtitle="Change The Current Style To Be Promoted"
                 /></Link>
             </Box>
             <Box gridColumn="span 4" backgroundColor = {colors.primary[400]} display="flex" alignItems="center" justifyContent="center">
                 <Link href="/website-text-admin"><ThreeGridBoxImage 
                     image={require("../../../assets/images/website_text.jpg")}
                     title="Website Texts"
-                    subtitle="you Can change Website Texts"
+                    subtitle="Update Our About Page"
                 /></Link>
             </Box>
             <Box gridColumn="span 4" backgroundColor = {colors.primary[400]} display="flex" alignItems="center" justifyContent="center">
                 <Link href="/website-image-gallery"><ThreeGridBoxImage 
                     image={require("../../../assets/images/website_slides.jpg")}
-                    title="Website Gallery"
-                    subtitle="you Can change Website Gallery"
+                    title="Collections"
+                    subtitle="Change The Current Collections To Be Promoted"
                 /></Link>
             </Box>
             </Box>
