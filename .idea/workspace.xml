@@ -5,30 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9e3044a-f1eb-480c-b029-9e786ba2863d" name="Changes" comment="uyuy">
+      <change afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/websites/imageList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/users.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/usersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/usersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/Auth/AuthService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/Auth/AuthService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/getItemAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/getItemAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/saveItemAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/saveItemAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/editTeam.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/editTeam.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/landingpage/Team.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/landingpage/Team.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/global/SidebarAdmin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/global/SidebarAdmin.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="alyn" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSX File" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -48,15 +42,12 @@
     }
   ]
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/izadi-fikri/Java-CCSD.git&quot;,
-    &quot;accountId&quot;: &quot;af6d47c3-ecde-43b5-9f8c-13ee2cb821f2&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/izadi-fikri/Java-CCSD.git",
+    "accountId": "6006a54e-c77f-4601-99ff-c9c35ca0b623"
   }
-}</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -70,6 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -111,16 +103,8 @@
       <updated>1736221297251</updated>
       <workItem from="1736221298424" duration="19015000" />
       <workItem from="1736255375477" duration="3174000" />
+      <workItem from="1736270851446" duration="4319000" />
     </task>
-    <task id="LOCAL-00001" summary="uyuy">
-      <option name="closed" value="true" />
-      <created>1736269055298</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1736269055298</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
