@@ -7,14 +7,14 @@ const API_BASE_URL = 'http://localhost:8082';
 const AuthService = {
     async login(email, password) {
       try {
-        // const response = await axios.post(`${API_BASE_URL}/api/users`, {
+        // const response = await axios.post(`${API_BASE_URL}/api/user`, {
         //     email,
         //     password,
             
         // },
 
         const response = await axios.post(
-          `${API_BASE_URL}/api/users/signin`, // Use the correct endpoint for sign-in
+          `${API_BASE_URL}/api/user/signin`, // Use the correct endpoint for sign-in
           { email, password }, // Pass email and password in the request body
 
 

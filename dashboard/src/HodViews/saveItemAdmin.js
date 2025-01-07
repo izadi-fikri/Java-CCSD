@@ -48,7 +48,7 @@ const SaveItemsAdmin = {
 
 
       const response = await axios.post(
-        `${API_BASE_URL}/api/users`,
+        `${API_BASE_URL}/api/user`,
         formData,
         {
           headers: {

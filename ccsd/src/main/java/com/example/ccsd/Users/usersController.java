@@ -28,7 +28,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/api/user")
 public class usersController {
 
     @Autowired
@@ -91,8 +91,8 @@ public class usersController {
 
     // get user by id 
     @GetMapping("/{id}")
-    public ResponseEntity<users> getUserById(@PathVariable String UserId) {
-        return usersService.getUserById(UserId)
+    public ResponseEntity<users> getUserById(@PathVariable String id) {
+        return usersService.getUserById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
