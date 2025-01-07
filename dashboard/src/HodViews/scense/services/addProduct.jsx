@@ -171,7 +171,7 @@ const AddProduct = () => {
 
 
                 <FormControl sx={{ m: 1, width: '60%' }} variant="filled">
-                <InputLabel htmlFor="filled-adornment-address">Tags</InputLabel>
+                <InputLabel id="tag" htmlFor="filled-adornment-address">Tags</InputLabel>
                 <FilledInput
                    onChange={(e) => setTag(e.target.value)}
                     id='tag'
@@ -192,7 +192,7 @@ const AddProduct = () => {
                 </FilledInput>
                 </FormControl>
                 <FormControl sx={{ m: 1, width: '93%' }} variant="filled">
-                <InputLabel htmlFor="filled-adornment-short-description">Blog Short Description</InputLabel>
+                <InputLabel id="short-description" htmlFor="filled-adornment-short-description">Blog Short Description</InputLabel>
                 <FilledInput
                    onChange={(e) => setPostShortDescription(e.target.value)}
                     id='short-description'

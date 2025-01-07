@@ -42,14 +42,14 @@ public class WebsiteTextsController {
         return websiteTextsService.addText(websiteTexts);
     }
 
-     @PutMapping("/{id}")
-    public ResponseEntity<WebsiteTexts> updateText(@PathVariable String id, @RequestBody WebsiteTexts textDetails) {
-        WebsiteTexts updatedText = websiteTextsService.updateText(id, textDetails);
-        if (updatedText != null) {
-            return ResponseEntity.ok(updatedText);
-        }
-        return ResponseEntity.notFound().build();
-    }
+//     @PutMapping("/{id}")
+//    public ResponseEntity<WebsiteTexts> updateText(@PathVariable String id, @RequestBody WebsiteTexts textDetails) {
+//        WebsiteTexts updatedText = websiteTextsService.updateText(id, textDetails);
+//        if (updatedText != null) {
+//            return ResponseEntity.ok(updatedText);
+//        }
+//        return ResponseEntity.notFound().build();
+//    }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteText(@PathVariable String id) {

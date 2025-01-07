@@ -20,16 +20,16 @@ public class WebsiteTextsService {
         return websiteTextsRepository.save(websiteTexts);
     }
 
-    // Updates an existing WebsiteText
-    public WebsiteTexts updateText(String id, WebsiteTexts textDetails) {
-        return websiteTextsRepository.findById(id)
-                .map(websiteTexts -> {
-                    websiteTexts.setText(textDetails.getText());  // Updating text
-                    websiteTextsRepository.save(websiteTexts);
-                    return websiteTextsRepository.save(websiteTexts); // Save the updated text
-                })
-                .orElse(null); // If the text is not found, return null
-    }
+//    // Updates an existing WebsiteText
+//    public WebsiteTexts updateText(String id, WebsiteTexts textDetails) {
+//        return websiteTextsRepository.findById(id)
+//                .map(websiteTexts -> {
+//                    websiteTexts.setText(textDetails.getText());  // Updating text
+//                    websiteTextsRepository.save(websiteTexts);
+//                    return websiteTextsRepository.save(websiteTexts); // Save the updated text
+//                })
+//                .orElse(null); // If the text is not found, return null
+//    }
 
     // Deletes a WebsiteText by ID
     public void deleteText(String id) {

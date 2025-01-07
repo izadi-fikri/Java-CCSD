@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/javaccsd.iml" filepath="$PROJECT_DIR$/.idea/javaccsd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-CCSD.iml" filepath="$PROJECT_DIR$/.idea/Java-CCSD.iml" />
     </modules>
   </component>
 </project>

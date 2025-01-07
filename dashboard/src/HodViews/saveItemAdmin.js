@@ -87,7 +87,6 @@ const SaveItemsAdmin = {
       formData.append('place', place);
       formData.append('title', title);
       formData.append('postSlug', postSlug);
-      formData.append('content', content);
       formData.append('status', status);
       formData.append('date', date);
 

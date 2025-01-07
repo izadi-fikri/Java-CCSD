@@ -28,7 +28,7 @@ public class productsController {
     @Autowired
     private productsService productsService;
 
-   /* @GetMapping
+    @GetMapping
     public List<products> getAllProducts() {
         List<products> productsList = productsService.getAllProducts();  // Get all products
 

@@ -106,7 +106,7 @@ const SidebarAdmin = () => {
                  Admin
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  Super Admin
+                  uWu Administrator
                 </Typography>
               </Box>
             </Box>
@@ -130,7 +130,7 @@ const SidebarAdmin = () => {
               Pages
             </Typography>
             <Item
-              title="Website Components"
+              title="WebPage Components"
               to="/website-components-admin"
               icon={<ScreenSearchDesktopIcon />}
               selected={selected}
