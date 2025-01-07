@@ -5,46 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9e3044a-f1eb-480c-b029-9e786ba2863d" name="Changes" comment="uyuy">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/src/FrontEnd/scense/uwu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/src/assets/images/uwu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/src/assets/uwu2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/src/landingpage/uwu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/javaccsd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java-CCSD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Gallery/gallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Gallery/gallery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Products/products.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Products/products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Products/productsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Products/productsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/users.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/usersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/usersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/usersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/Users/usersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTexts.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTexts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTextsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTextsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTextsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ccsd/src/main/java/com/example/ccsd/WebsiteTexts/WebsiteTextsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/Auth/AuthService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/Auth/AuthService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/FrontEnd/scense/SignInSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/FrontEnd/scense/SignInSide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/getItemAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/getItemAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/saveItemAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/saveItemAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/dashboard/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/websites/imageList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/global/SidebarAdmin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/global/SidebarAdmin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/global/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/global/Topbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/services/addProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/services/addProduct.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/addTeam.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/addTeam.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/editTeam.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/editTeam.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/team/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/HodViews/scense/websites/websiteComponents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/src/HodViews/scense/websites/websiteComponents.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,23 +31,23 @@
     &quot;assignee&quot;: &quot;izadi-fikri&quot;
   }
 }</component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDONmGCOM6G9fBt",
-        "number": 3
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDONmGCOM6G9fBt&quot;,
+        &quot;number&quot;: 3
       },
-      "lastSeen": 1736268601421
+      &quot;lastSeen&quot;: 1736268601421
     }
   ]
-}]]></component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/izadi-fikri/Java-CCSD.git&quot;,
-    &quot;accountId&quot;: &quot;af6d47c3-ecde-43b5-9f8c-13ee2cb821f2&quot;
-  }
 }</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/izadi-fikri/Java-CCSD.git",
+    "accountId": "6006a54e-c77f-4601-99ff-c9c35ca0b623"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -85,7 +61,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "#3 on Merging alyn",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/shits/IdeaProjects/Java-CCSD",
@@ -126,6 +103,7 @@
       <updated>1736221297251</updated>
       <workItem from="1736221298424" duration="19015000" />
       <workItem from="1736255375477" duration="3174000" />
+      <workItem from="1736270851446" duration="4319000" />
     </task>
     <servers />
   </component>

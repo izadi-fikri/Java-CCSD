@@ -16,6 +16,7 @@ import AddWebsiteGallery from "./HodViews/scense/websites/addWebsiteGallery";
 import Landing from "./landingpage/landing";
 import "./App.css";
 import Payment from "./payment/payment";
+import ImageListAdmin from "./HodViews/scense/websites/imageList";
 
 
 const HodViewsLayout = ({ children }) => {
@@ -116,6 +117,14 @@ function App() {
           </HodViewsLayout>
         }
       />
+        <Route
+        path="/website-imageList-admin"
+        element={
+            <HodViewsLayout>
+                <ImageListAdmin />
+            </HodViewsLayout>
+        }
+    />
       <Route
         path="/website-image-gallery"
         element={
