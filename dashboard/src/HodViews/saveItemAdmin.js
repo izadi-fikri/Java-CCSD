@@ -98,7 +98,7 @@ const SaveItemsAdmin = {
       const response = await axios.post(
         `${API_BASE_URL}/api/products`,
         formData,
-        {
+        {g
           headers: {
             'Content-Type': 'multipart/form-data', // Set content type to multipart/form-data for file uploads
             Authorization: `Bearer ${token}`,
