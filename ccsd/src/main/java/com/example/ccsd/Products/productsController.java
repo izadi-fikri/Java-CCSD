@@ -96,10 +96,10 @@ public class productsController {
     //     return ResponseEntity.notFound().build();
     // }
 
-    // @DeleteMapping("/{id}")
-    // public ResponseEntity<Void> deleteProducts(@PathVariable String id) {
-    //     productsService.deleteProducts(id);
-    //     return ResponseEntity.noContent().build();
-    // }
+     @DeleteMapping("/{id}")
+     public ResponseEntity<Void> deleteProducts(@PathVariable String id) {
+         productsService.deleteProducts(id);
+         return ResponseEntity.noContent().build();
+     }
 
 }
