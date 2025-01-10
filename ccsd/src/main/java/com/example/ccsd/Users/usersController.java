@@ -195,7 +195,7 @@ public class usersController {
 //         e.printStackTrace();
 //         return ResponseEntity.status(500).body("Error uploading the file.");
 //     }
-
+    //not used
     @PutMapping("/{id}")
     public ResponseEntity<users> updateUser(@PathVariable String id, @RequestBody users usersDetails) {
         users updatedusers = usersService.updateUser(id, usersDetails);
