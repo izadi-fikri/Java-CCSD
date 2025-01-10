@@ -27,7 +27,7 @@ public class usersService {
 
         return usersRepository.findAll();
     }
-
+    //not used
     public users updateUser(String id, users userDetails) {
         return usersRepository.findById(id).map(existingUser -> {
             existingUser.setEmail(userDetails.getEmail());
